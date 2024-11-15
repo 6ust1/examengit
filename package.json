@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "mat":"node app"
+    "mat": "node app"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
 }
