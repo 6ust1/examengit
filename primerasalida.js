@@ -1,5 +1,4 @@
 const colors = require("colors");
-const { Calculadora } = require("./clases/calculadora");
-const calculadora = new Calculadora();
-
-console.log( `EL factorial del numero es:, ${estadistica.factorial(5)}`.blue);
+const { Estadistica } = require("./clases/estadistica");
+const estadistica = new Estadistica();
+console.log( `EL factorial del numero es: ${estadistica.factorial(5)}`.blue);

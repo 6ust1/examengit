@@ -3,7 +3,7 @@ class Estadistica {
 
   factorial = (numero) => {
     if (numero > 0) {
-      return factorial(numero - 1) * numero;
+      return this.factorial(numero - 1) * numero;
     } else if (numero == 0) {
       return 1;
     } else {
@@ -21,6 +21,21 @@ class Estadistica {
     if (r > n || n < 0 || r < 0) {
       console.log(
         "No es posible calcular la combinatoria: Parametros incorrectos"
+      );
+      return;
+    }
+    return numerador / denominador;
+  };
+  permutacion = (n, r) => {
+    const numerador = this.factorial(n);
+    const denominador =  this.factorial(n - r);
+    if (denominador === 0) {
+      console.log("No es posible calcular la permutacion");
+      return;
+    }
+    if (r > n || n < 0 || r < 0) {
+      console.log(
+        "No es posible calcular la permutacion: Parametros incorrectos"
       );
       return;
     }

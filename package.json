@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "mat": "node app"
+    "mat": "node app",
+    "combi":"node app && participantes",
+    "salida1":"node primerasalida",
+    "salida2":"node segundasalida",
+    "salida3":"node tercerasalida"
+
+    
   },
   "keywords": [],
   "author": "",
